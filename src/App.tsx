@@ -1,24 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Nav from './Nav';
+import Header from './Header';
+import HeroSection from './HeroSection';
+import Desc from './Desc';
+import Started from './Started';
+import TabTitle from './TabTitle';
+import Tab from './Tab';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav/>
+      <Header/>
+      <HeroSection/>
+      <Desc />
+      <Started />
+      <TabTitle />
+      <Tab />
     </div>
   );
 }
